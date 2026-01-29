@@ -1,5 +1,5 @@
 # Privacy Policy — Soccer Stats GPT
-**Last updated:** 2026-01-16
+**Last updated:** 2026-01-29
 
 This GPT connects to an external API (“343 Google API”) to answer questions about soccer statistics.
 
@@ -13,3 +13,21 @@ We do not sell your data and do not intentionally collect sensitive personal inf
 
 ## Contact
 If you have questions, contact: 343-weibo
+
+## Use cases
+✅ Clear queries (auto-executed)
+| User query                      | Interpretation             |
+| ------------------------------- | -------------------------- |
+| “Premier League teams by xG”    | Team-level                 |
+| “Players at Arsenal by xG”      | Player-level (team filter) |
+| “Best passers at Man City”      | Player-level               |
+| “Bundesliga defensive rankings” | Team-level                 |
+
+⚠️ Clarification required
+| User query                              | Why                      |
+| --------------------------------------- | ------------------------ |
+| “Manchester United xG from midfielders” | Player vs team ambiguity |
+| “Team defense vs player tackles”        | Two schemas mixed        |
+| “Best buildup players and teams”        | Dual entity intent       |
+
+Also, please be specific about aggregations like average and sum. 
